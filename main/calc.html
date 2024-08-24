@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/calc.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="nav">
+        <div class="container-nav">
+            <h1 class="logo"><a href="\index.html">Fate</a></h1>
+            <ul>
+                <li><a href="\index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Tools <span class="arrow">&#9662;</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="main/calc.html" class="current">Calculator</a></li>
+                        <li><a href="main/notes.html">Notes</a></li>
+                        <li><a href="main/decision.html">Decision Maker</a></li>
+                    </ul>
+                </li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </div>
+    </nav>
+<div class="darkoverlay">
+    <div class="calculator">
+        <div class="container">
+            <input type="text" class="display" readonly>
+            <div class="buttons">
+                <button class="operator" data-value="AC">AC</button>
+                <button class="operator" data-value="DEL">DEL</button>
+                <button class="operator" data-value="%">%</button>
+                <button class="operator" data-value="/">/</button>
+    
+                <button data-value="7">7</button>
+                <button data-value="8">8</button>
+                <button data-value="9">9</button>
+                <button class="operator" data-value="*">*</button>
+    
+                <button data-value="4">4</button>
+                <button data-value="5">5</button>
+                <button data-value="6">6</button>
+                <button class="operator" data-value="-">-</button>
+    
+                <button data-value="1">1</button>
+                <button data-value="2">2</button>
+                <button data-value="3">3</button>
+                <button class="operator" data-value="+">+</button>
+    
+                <button data-value="00">00</button>
+                <button data-value="0">0</button>
+                <button data-value=".">.</button>
+                <button class="operator" data-value="=">=</button>
+            </div>
+        </div>
+    </div>
+    <div class="theme-box">
+        <h3>Choose Theme</h3>
+        <button class="theme-btn" data-theme="light">Light</button>
+        <button class="theme-btn" data-theme="dark">Dark</button>
+        <!-- Add more themes as needed -->
+    </div>
+</div>
+    <script src="scripts/calc.js"></script>
+</body>
+</html>
