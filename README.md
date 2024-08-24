@@ -16,11 +16,30 @@ A web based tool hub designed to bring together essential utility into one conve
 ## Features
 
 ## Installation
+1. Clone the repository!
+```bash
+git clone https://github.com/H1GH11/Fate.git
+```
 
+2. Navigate the directory through the terminal
+```bash 
+cd Fate
+```
+
+3. Open 'index.html' file in your web browser
+```bash
+open index.html
+```
+
+OR 
+
+Just 'Download as ZIP' on the Github page and open 'index.html' file in your web browser after extracting the zip file.
 ## Usage
-
+- Calculator: It's pretty easy to figure out a Calculator.
+- Notes App: It's pretty easy to figure out a Notes App too.
+- Decision Maker: Input your options and the tool will undergo complex mathematical calculations to give you the perfect answer (aka randomly choosing between the options).
 ## Languages Used
-
+HTML: For structure, CSS: For style, and JavaScript: For logic and interactivity.
 ## Contributing 
 
 Pull requests are welcome. For major changes, please open an issue first
@@ -29,3 +48,4 @@ to discuss what you would like to change.
 Please make sure to update tests as appropriate.
 
 ## Contact
+For any questions or comments, please reach out to me [Here!](mailto:pawanksingh12dec@gmail.com)
