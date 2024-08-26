@@ -9,7 +9,7 @@
 body {
     font-family: 'Anek Devanagari', sans-serif;
     color: #222;
-    background-image: url("/img/wallhaven-1pv19v.png");
+    background-image: url(../img/wallhaven-1pv19v.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -117,15 +117,6 @@ body {
 /* Arrow */
 .arrow {
     margin-left: 5px;
-}
-
-/* Dark Overlay */
-
-.dark-overlay {
-    content: '';
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
 }
 
 /* FAQ  */
