@@ -13,12 +13,14 @@ body {
     background-image: url(../img/wallhaven-1pv19v.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 .container {
     position: relative;
     max-width: 300px;
     width: 100%;
+    margin: 0 auto;
     border-radius: 12px;
     padding: 20px 20px 20px;
     background: #fff;
@@ -81,22 +83,23 @@ body {
 
 /* Theme Box */
 .theme-box {
-    position: absolute;
-    top: 0;
-    right: 0px; /* Adjust as needed to place it beside the calculator */
-    left: 1203px;
-    bottom: 325px;
-    top: 89px;
-    width: 140px;
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    width: auto;
+    max-width: 200px;
     padding: 10px;
     background: #fff;
-    border-radius: 12px;
+    border-radius: 6px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 .theme-box h3 {
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    line-height: 20px;
 }
 
 .theme-box .theme-btn {
@@ -184,6 +187,7 @@ body.dark-theme .theme-box {
     text-align: center;
     margin-left: 40px;
     border-radius: 6px;
+    font-size: 16px;
     transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
 }
 
@@ -238,6 +242,10 @@ body.dark-theme .theme-box {
 
 .nav a.current, .nav a:hover {
     font-weight: bold;
+}
+
+.nav a.current {
+    color: #8e3dc8;
 }
 
 .logo {
