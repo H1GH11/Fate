@@ -10,7 +10,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('https://w.wallhaven.cc/full/1p/wallhaven-1pv19v.png');
+    background-image: url("/img/wallhaven-1pv19v.png");
     background-repeat: no-repeat;
     background-size: cover;
 }

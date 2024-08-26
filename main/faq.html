@@ -15,52 +15,61 @@
         <h1 class="logo"><a href="/index.html">Fate</a></h1>
         <ul>
             <li><a href="\index.html">Home</a></li>
-            <li><a href="tools.html">Tools</a></li>
+            <li class="dropdown">
+                <a href="#">Tools <span class="arrow">&#9662;</span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="calc.html">Calculator</a></li>
+                    <li><a href="notes.html">Notes</a></li>
+                    <li><a href="decision.html">Decision Maker</a></li>
+                </ul>
+            </li>
             <li><a href="faq.html" class="current">FAQ</a></li>
         </ul>
     </div>
 </nav>
-<h1 class="faq-top-margin">Frequently Asked Questions</h1>
-<div class="faq-container">
-    <div class="faq">
-        <h3 class="faq-title">Why is it called Fate?</h3>
-        <p class="faq-text">It was the first thing that came to mind, watch Fate. It's peak fiction.</p>
-        <button class="faq-toggle">
-            <i class="fa fa-chevron-down"></i>
-            <i class="fa fa-times"></i>
-        </button>
-    </div>
-    <div class="faq">
-        <h3 class="faq-title">What is the point of an FAQ page for a simple project?</h3>
-        <p class="faq-text">Because it makes it look better, I'm trying to impress people, you know?</p>
-        <button class="faq-toggle">
-            <i class="fa fa-chevron-down"></i>
-            <i class="fa fa-times"></i>
-        </button>
-    </div>
-    <div class="faq">
-        <h3 class="faq-title">How do I support this open source project?</h3>
-        <p class="faq-text">Let me join the committee, please.</p>
-        <button class="faq-toggle">
-            <i class="fa fa-chevron-down"></i>
-            <i class="fa fa-times"></i>
-        </button>
-    </div>
-    <div class="faq">
-        <h3 class="faq-title">How did you make this website?</h3>
-        <p class="faq-text"><img src="https://media1.tenor.com/m/b1z2OK1skyIAAAAd/goofy-ahh.gif" alt="" style="max-width: 100%; height: auto;"></p>
-        <button class="faq-toggle">
-            <i class="fa fa-chevron-down"></i>
-            <i class="fa fa-times"></i>
-        </button>
-    </div>
-    <div class="faq">
-        <h3 class="faq-title">Is all of this really necessary?</h3>
-        <p class="faq-text">No.</p>
-        <button class="faq-toggle">
-            <i class="fa fa-chevron-down"></i>
-            <i class="fa fa-times"></i>
-        </button>
+<div class="darkoverlay"> <!-- In case you're wondering why the class name is wrong, it's because i couldn't figure out why the dark overlay on this didnt fit properly, so I'm just leaving this here for when I eventually fix it. -->
+    <h1 class="faq-top-margin">Frequently Asked Questions</h1>
+    <div class="faq-container">
+        <div class="faq">
+            <h3 class="faq-title">Why is it called Fate?</h3>
+            <p class="faq-text">It was the first thing that came to mind, watch Fate. It's peak fiction.</p>
+            <button class="faq-toggle">
+                <i class="fa fa-chevron-down"></i>
+                <i class="fa fa-times"></i>
+            </button>
+        </div>
+        <div class="faq">
+            <h3 class="faq-title">What is the point of an FAQ page for a simple project?</h3>
+            <p class="faq-text">Because it makes it look better, I'm trying to impress people, you know?</p>
+            <button class="faq-toggle">
+                <i class="fa fa-chevron-down"></i>
+                <i class="fa fa-times"></i>
+            </button>
+        </div>
+        <div class="faq">
+            <h3 class="faq-title">How do I support this open source project?</h3>
+            <p class="faq-text">Let me join the committee, please.</p>
+            <button class="faq-toggle">
+                <i class="fa fa-chevron-down"></i>
+                <i class="fa fa-times"></i>
+            </button>
+        </div>
+        <div class="faq">
+            <h3 class="faq-title">How did you make this website?</h3>
+            <p class="faq-text"><img src="https://media1.tenor.com/m/b1z2OK1skyIAAAAd/goofy-ahh.gif" alt="" style="max-width: 100%; height: auto;"></p>
+            <button class="faq-toggle">
+                <i class="fa fa-chevron-down"></i>
+                <i class="fa fa-times"></i>
+            </button>
+        </div>
+        <div class="faq">
+            <h3 class="faq-title">Is all of this really necessary?</h3>
+            <p class="faq-text">No.</p>
+            <button class="faq-toggle">
+                <i class="fa fa-chevron-down"></i>
+                <i class="fa fa-times"></i>
+            </button>
+        </div>
     </div>
 </div>
 <script src="scripts\faqscript.js"></script>

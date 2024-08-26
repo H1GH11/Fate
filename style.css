@@ -118,8 +118,7 @@ body {
 }
 
 .hero {
-    background-image: url('https://w.wallhaven.cc/full/1p/wallhaven-1pv19v.png');
-    background-repeat: no-repeat;
+    background-image: url("img/wallhaven-1pv19v.png");    background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom center;
     height: 100vh;
