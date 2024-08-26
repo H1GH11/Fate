@@ -113,12 +113,14 @@ body.light-theme .container,
 body.light-theme .theme-box {
     background-color: #ffffff;
     color: #000e1a;
+    transition: all 0.3s ease-in-out;
 }
 
 body.dark-theme .container,
 body.dark-theme .theme-box {
     background-color: #333;
     color: #f0f0f0;
+    transition: all 0.3s ease-in-out;
 }
 
 /* Navbar after this line */
