@@ -15,7 +15,13 @@ const calculate = (btnValue) => {
         output = output.slice(0, -1)
     } else {
         if(output === "" && specialChars.includes(btnValue)) return;
-        output += btnValue;
+// Check if the last character is an operator and the new input is also an operator
+        if(specialChars.includes(btnValue) && specialChars.includes(output[output.length - 1])) {
+    // Replace the last operator with the new one
+    output = output.slice(0, -1) + btnValue;
+        } else {
+            output += btnValue;
+        }
     }
     display.value = output
 }

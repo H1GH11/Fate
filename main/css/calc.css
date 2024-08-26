@@ -34,9 +34,10 @@ body {
     text-align: right;
     margin-bottom: 10px;
     font-size: 25px;
-    color: #000e1a;
+    color: #8e3dc8;
     background-color: #ddd8d8;
     pointer-events: none;
+    border-radius: 6px;
 }
 
 .buttons {
@@ -55,11 +56,15 @@ body {
 }
 
 .buttons button:hover {
-    transform: scale(0.99);
+    transform: scale(1.05);
+}
+
+.buttons button:active {
+    transform: scale(0.98);
 }
 
 .operator {
-    color: #2f9fff;
+    color: #8e3dc8;
 }
 
 /*Dark Overlay after this line*/
@@ -97,7 +102,8 @@ body {
 .theme-box .theme-btn {
     width: 100%;
     padding: 8px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    font-size: 15px;
     border: none;
     border-radius: 6px;
     cursor: pointer;
@@ -111,14 +117,14 @@ body {
 /* Themes */
 body.light-theme .container,
 body.light-theme .theme-box {
-    background-color: #ffffff;
-    color: #000e1a;
+    background-color: #f0f0f0;
+    color: #1a1d24;
     transition: all 0.3s ease-in-out;
 }
 
 body.dark-theme .container,
 body.dark-theme .theme-box {
-    background-color: #333;
+    background-color: #1a1d24;
     color: #f0f0f0;
     transition: all 0.3s ease-in-out;
 }
@@ -163,11 +169,13 @@ body.dark-theme .theme-box {
 }
 
 .nav .dropdown-menu {
-    display: none;
+    display: block;
     position: absolute;
+    opacity: 0;
+    visibility: hidden;
     top: 49px;
     left: 0;
-    transform: translateX(-50%);
+    transform: translateX(-50%) translateY(-10px);
     background-color: #fff;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
     padding: 10px 0; 
@@ -175,6 +183,8 @@ body.dark-theme .theme-box {
     min-width: 150px;
     text-align: center;
     margin-left: 40px;
+    border-radius: 6px;
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
 }
 
 .nav .dropdown-menu li {
@@ -182,7 +192,7 @@ body.dark-theme .theme-box {
 }
 
 .nav .dropdown-menu a {
-    color: 000;
+    color: #000;
     padding: 10px 20px;
     display: block;
     text-align: center;
@@ -194,9 +204,11 @@ body.dark-theme .theme-box {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
-/* Show dropdown on hover */
+/* Show dropdown on hover and ensures visibility when hovering*/
 .nav .dropdown:hover .dropdown-menu {
-    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
 }
 
 /* Arrow */
