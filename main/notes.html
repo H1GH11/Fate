@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <title>Notes</title>
 </head>
 <body>
@@ -13,21 +14,33 @@
         <div class="container-nav">
             <h1 class="logo"><a href="..\index.html">Fate</a></h1>
             <ul>
-                <li><a href="..\index.html">Home</a></li>
-                <li class="dropdown">
+                <li class="nav-item"><a href="..\index.html">Home</a></li>
+                <li class="dropdown nav-item" >
                     <a href="#">Tools <span class="arrow">&#9662;</span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="calc.html">Calculator</a></li>
-                        <li><a href="notes.html" class="current">Notes</a></li>
-                        <li><a href="decision.html">Decision Maker</a></li>
+                        <li class="nav-item"><a href="calc.html">Calculator</a></li>
+                        <li class="nav-item"><a href="notes.html" class="current">Notes</a></li>
+                        <li class="nav-item"><a href="decision.html">Decision Maker</a></li>
                     </ul>
                 </li>
-                <li><a href="faq.html">FAQ</a></li>
+                <li class="nav-item"><a href="faq.html">FAQ</a></li>
             </ul>
         </div>
     </nav>
     <div class="darkoverlay">
-
+        <div id="container">
+            <div id="list-header">
+                <div id="addNoteDiv" onclick="popup()">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="blankDiv"></div>
+                <div class="blankDiv"></div>
+            </div>
+            <div id="list-container">
+                <ul id="notes-list"></ul>
+            </div>
+        </div>
     </div>
+    <script src="scripts/notes.js"></script>
 </body>
 </html>

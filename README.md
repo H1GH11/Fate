@@ -35,7 +35,7 @@ OR
 
 Just 'Download as ZIP' on the Github page and open 'index.html' file in your web browser after extracting the zip file.
 ## Usage
-- Calculator: It's pretty easy to figure out a Calculator.
+- Calculator: It's pretty easy to figure out a Calculator. (Keyboard Supported!)
 - Notes App: It's pretty easy to figure out a Notes App too.
 - Decision Maker: Input your options and the tool will undergo complex mathematical calculations to give you the perfect answer (aka randomly choosing between the options).
 ## Languages Used
