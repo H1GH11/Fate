@@ -12,6 +12,8 @@ body {
     background-image: url(../img/wallhaven-1pv19v.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .container {
